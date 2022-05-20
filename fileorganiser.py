@@ -14,7 +14,7 @@ path = "/home/ayoubamer/Downloads"
 
 chdir(path)
 for file in listdir(path):
-    if file.endswith(".fdmdownload") or file.startswith("."):
+    if file.startswith("."):
         continue
     name = file.split(".")[0]
     ext = file.split(".")[len(file.split(".")) - 1]
